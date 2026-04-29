@@ -1,0 +1,7 @@
+You are given smart home sensor events translated into natural language.
+
+Events:
+{events}
+
+Summarize the resident's behavior in 5-6 sentences.
+Mention the most active rooms and any notable pattern.

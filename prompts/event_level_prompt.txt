@@ -1,0 +1,12 @@
+prompt_event_sample = f"""
+You are given a sequence of smart home sensor events translated into natural language.
+
+Sensor events:
+{text_event_sample}
+
+Tasks:
+1. Describe the user's behavior.
+2. Identify the most used rooms.
+3. Highlight any unusual pattern.
+"""
+print(prompt_event_sample[:3000])

@@ -1,0 +1,11 @@
+You are given a sequence of smart home sensor events from a smart home environment.
+
+Events:
+{events}
+
+Answer the following questions:
+
+1. What activities or movements can be inferred from these events?
+2. Which rooms appear to be used the most?
+3. Are there any unusual transitions, patterns, or behaviors?
+4. Provide a concise overall interpretation of the resident's behavior.
