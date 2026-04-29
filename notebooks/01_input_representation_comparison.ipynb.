@@ -1,0 +1,61 @@
+# Input representations compared
+
+In this notebook, compare different textual representations of the same smart home sensor data.
+
+The goal is to understand which representation is more suitable for LLM-based reasoning about resident behavior, room usage, and notable patterns.
+
+## Compared representations
+
+Compare three input representations:
+
+1. **Clean event-level representation**: individual sensor events translated into natural language.
+2. **Minute-level aggregated representation**: events grouped by minute to reduce redundancy.
+3. **Hourly aggregated representation**: events grouped by hour to provide a compact behavioral overview.
+
+## First observation
+
+The raw event-level representation is very faithful to the original data, but it is noisy and repetitive.
+
+The minute-level representation is more compact and easier to interpret because it groups events occurring in the same minute.
+
+The hourly representation gives a broader overview, but it may lose fine-grained temporal details.
+
+## Comparison table
+
+| Representation | Clarity | Faithfulness | Behavior inference | Hallucinations risk | Notes |
+|---|---|---|---|---|---|
+| Clean event-level | Medium | High | Medium | Low | Too detailed and repetitive, hard to see patterns |
+| Minute-level aggregated | High | High | High | Low | Best balance between readability and detail |
+| Hourly aggregated | High | Medium | Medium | Medium | Good overview but loses temporal precision |
+
+## Evaluation criteria
+
+Evaluate the representations using qualitative criteria:
+
+- **Clarity**: how readable the input is.
+- **Faithfulness**: how much information from the original data is preserved.
+- **Behavior inference**: how well the representation supports reasoning about resident behavior.
+- **Hallucinations risk**: how likely the model is to infer unsupported information.
+
+## Key insights
+
+- Raw sensor events are too granular and repetitive for effective reasoning.
+- Aggregation reduces noise and improves interpretability.
+- There is a trade-off between detail and abstraction.
+- The minute-level representation appears to provide the best balance for this task.
+
+## Baseline comparison
+
+A simple rule-based baseline is useful because it provides a rigid comparison point.
+
+The baseline can detect predefined situations, while an LLM-based approach may provide more flexible interpretations.
+
+However, LLM outputs must be checked carefully because they may introduce unsupported assumptions.
+
+## Conclusion
+
+This first analysis suggests that input representation strongly affects the interpretability of sensor data.
+
+Moderate aggregation, especially minute-level aggregation, seems to provide the best balance between readability and preservation of useful behavioral information.
+
+Future work will compare actual LLM outputs against manually annotated ground-truth summaries and question-answer pairs.

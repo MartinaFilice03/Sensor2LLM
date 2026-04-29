@@ -1,0 +1,10 @@
+You are given hourly aggregated smart home sensor events translated into natural language.
+
+Events:
+{events}
+
+Tasks:
+1. Describe the resident's behavior over the observed period.
+2. Identify the main areas used during different hours.
+3. Highlight any unusual or notable pattern.
+4. Provide a short overall interpretation.
