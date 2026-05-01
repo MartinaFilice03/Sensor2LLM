@@ -1,0 +1,23 @@
+During the hour starting at 00:00, activity was detected in these areas: bathroom, bedroom, living room.
+During the hour starting at 01:00, activity was detected in these areas: bedroom, dining room, kitchen, living room, lounge chair, outside door.
+During the hour starting at 02:00, activity was detected in these areas: bedroom, kitchen, living room.
+During the hour starting at 03:00, activity was detected in these areas: bathroom, bedroom, living room.
+During the hour starting at 04:00, activity was detected only in the bedroom.
+During the hour starting at 05:00, activity was detected in these areas: bedroom, dining room, kitchen, living room, lounge chair, outside door.
+During the hour starting at 06:00, activity was detected in these areas: bathroom, bedroom, living room, lounge chair, outside door.
+During the hour starting at 07:00, activity was detected only in the bedroom.
+During the hour starting at 08:00, activity was detected in these areas: bathroom, bedroom, dining room, kitchen, living room, lounge chair, work area.
+During the hour starting at 09:00, activity was detected in these areas: bathroom, bedroom, dining room, kitchen, living room, lounge chair, outside door, work area.
+During the hour starting at 10:00, activity was detected in these areas: bathroom, bedroom, dining room, kitchen, living room, lounge chair, outside door, work area.
+During the hour starting at 11:00, activity was detected in these areas: bathroom, bedroom, dining room, kitchen, living room, lounge chair, outside door.
+During the hour starting at 12:00, activity was detected in these areas: bathroom, bedroom, dining room, kitchen, living room, lounge chair, outside door, work area.
+During the hour starting at 14:00, activity was detected in these areas: bathroom, bedroom, dining room, kitchen, living room, lounge chair, outside door, work area.
+During the hour starting at 15:00, activity was detected in these areas: bathroom, bedroom, dining room, kitchen, living room, lounge chair, outside door, work area.
+During the hour starting at 16:00, activity was detected in these areas: bathroom, bedroom, dining room, kitchen, living room, lounge chair, outside door, work area.
+During the hour starting at 17:00, activity was detected in these areas: bathroom, bedroom, dining room, kitchen, living room, lounge chair, outside door, work area.
+During the hour starting at 18:00, activity was detected in these areas: bathroom, dining room, kitchen, living room, lounge chair, outside door, work area.
+During the hour starting at 19:00, activity was detected in these areas: lounge chair, work area.
+During the hour starting at 20:00, activity was detected in these areas: bathroom, bedroom, dining room, kitchen, living room, lounge chair, outside door, work area.
+During the hour starting at 21:00, activity was detected in these areas: bathroom, bedroom, kitchen, living room, lounge chair, outside door, work area.
+During the hour starting at 22:00, activity was detected in these areas: bathroom, bedroom.
+During the hour starting at 23:00, activity was detected in these areas: bedroom, dining room, kitchen, living room.

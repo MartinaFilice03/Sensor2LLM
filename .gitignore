@@ -8,5 +8,4 @@ __pycache__/
 
 data/raw/*.zip
 data/raw/floorplans/
-outputs/
 results/

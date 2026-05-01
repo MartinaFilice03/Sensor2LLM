@@ -1,0 +1,113 @@
+At 00:01, movement detected in the bathroom.
+At 00:01, movement detected in the living room.
+At 00:01, no more movement in the bathroom.
+At 00:01, movement detected in the bedroom.
+At 00:01, no more movement in the living room.
+At 00:01, no more movement in the bedroom.
+At 00:08, movement detected in the bedroom.
+At 00:08, no more movement in the bedroom.
+At 00:24, movement detected in the bedroom.
+At 00:24, no more movement in the bedroom.
+At 00:56, movement detected in the bedroom.
+At 00:56, no more movement in the bedroom.
+At 01:27, movement detected in the bedroom.
+At 01:27, no more movement in the bedroom.
+At 01:27, movement detected in the bedroom.
+At 01:27, no more movement in the bedroom.
+At 01:28, movement detected in the bedroom.
+At 01:28, no more movement in the bedroom.
+At 01:29, movement detected in the bedroom.
+At 01:29, movement detected in the living room.
+At 01:29, no more movement in the bedroom.
+At 01:29, no more movement in the living room.
+At 01:29, movement detected in the kitchen.
+At 01:29, movement detected in the kitchen.
+At 01:29, no more movement in the kitchen.
+At 01:29, no more movement in the kitchen.
+At 01:30, movement detected in the kitchen.
+At 01:30, movement detected in the kitchen.
+At 01:30, no more movement in the kitchen.
+At 01:30, no more movement in the kitchen.
+At 01:32, movement detected in the dining room.
+At 01:32, no more movement in the dining room.
+At 01:32, movement detected in the outside door.
+At 01:32, no more movement in the outside door.
+At 01:32, movement detected in the outside door.
+At 01:32, movement detected in the living room.
+At 01:32, no more movement in the outside door.
+At 01:32, no more movement in the living room.
+At 01:32, movement detected in the lounge chair.
+At 01:32, no more movement in the lounge chair.
+At 02:01, movement detected in the bedroom.
+At 02:01, no more movement in the bedroom.
+At 02:01, movement detected in the bedroom.
+At 02:01, no more movement in the bedroom.
+At 02:32, movement detected in the living room.
+At 02:32, no more movement in the living room.
+At 02:32, movement detected in the kitchen.
+At 02:32, movement detected in the kitchen.
+At 02:32, no more movement in the kitchen.
+At 02:32, no more movement in the kitchen.
+At 02:32, movement detected in the kitchen.
+At 02:32, no more movement in the kitchen.
+At 02:33, movement detected in the kitchen.
+At 02:33, movement detected in the kitchen.
+At 02:33, no more movement in the kitchen.
+At 02:33, no more movement in the kitchen.
+At 02:33, movement detected in the living room.
+At 02:33, no more movement in the living room.
+At 02:48, movement detected in the living room.
+At 02:48, no more movement in the living room.
+At 03:02, movement detected in the living room.
+At 03:02, no more movement in the living room.
+At 03:02, movement detected in the living room.
+At 03:02, movement detected in the living room.
+At 03:02, no more movement in the living room.
+At 03:02, movement detected in the bedroom.
+At 03:02, no more movement in the living room.
+At 03:02, no more movement in the bedroom.
+At 03:54, movement detected in the bedroom.
+At 03:54, no more movement in the bedroom.
+At 03:54, movement detected in the bedroom.
+At 03:54, no more movement in the bedroom.
+At 03:55, movement detected in the bedroom.
+At 03:55, movement detected in the bedroom.
+At 03:55, no more movement in the bedroom.
+At 03:55, no more movement in the bedroom.
+At 03:55, movement detected in the bedroom.
+At 03:55, no more movement in the bedroom.
+At 03:55, movement detected in the bedroom.
+At 03:55, no more movement in the bedroom.
+At 03:55, movement detected in the bedroom.
+At 03:55, no more movement in the bedroom.
+At 03:55, movement detected in the bedroom.
+At 03:55, no more movement in the bedroom.
+At 03:56, movement detected in the bedroom.
+At 03:56, no more movement in the bedroom.
+At 03:56, movement detected in the bedroom.
+At 03:56, movement detected in the bedroom.
+At 03:56, no more movement in the bedroom.
+At 03:56, movement detected in the bedroom.
+At 03:56, no more movement in the bedroom.
+At 03:56, no more movement in the bedroom.
+At 03:56, movement detected in the bathroom.
+At 03:56, no more movement in the bathroom.
+At 03:56, movement detected in the bathroom.
+At 03:56, no more movement in the bathroom.
+At 03:58, movement detected in the bathroom.
+At 03:58, no more movement in the bathroom.
+At 03:58, movement detected in the bathroom.
+At 03:58, no more movement in the bathroom.
+At 03:58, movement detected in the bedroom.
+At 03:58, movement detected in the bedroom.
+At 03:58, movement detected in the bedroom.
+At 03:58, no more movement in the bedroom.
+At 03:58, movement detected in the bedroom.
+At 03:58, no more movement in the bedroom.
+At 03:58, no more movement in the bedroom.
+At 03:58, movement detected in the bedroom.
+At 03:58, movement detected in the bedroom.
+At 03:58, no more movement in the bedroom.
+At 03:59, no more movement in the bedroom.
+At 03:59, no more movement in the bedroom.
+At 03:59
