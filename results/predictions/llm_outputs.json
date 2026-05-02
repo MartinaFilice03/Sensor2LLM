@@ -1,0 +1,10 @@
+[
+  {
+    "run_id": "run_001",
+    "date": "2009-10-16",
+    "representation": "event_level",
+    "prompt_type": "summary",
+    "model": "chatgpt",
+    "output": "The resident shows repeated movement mainly during the night and early morning. The most active room is clearly the bedroom, with many short movement events between midnight and 04:00. There are also several transitions from the bedroom to the living room, kitchen, bathroom, dining room, lounge chair, and outside door. The kitchen and living room appear as secondary active areas, especially around 01:29-02:33. A notable pattern is the frequent repeated ON/OFF movement in the bedroom, which may indicate restless movement or sensor noise. Overall, the behavior suggests mostly indoor nighttime activity, with the bedroom as the dominant area and occasional movement through shared rooms."
+  }
+]

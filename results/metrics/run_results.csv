@@ -1,0 +1,2 @@
+run_id,date,representation,prompt_type,model,clarity,faithfulness,behavior_inference,hallucination_risk,summary
+run_001,2009-10-16,event_level,summary,chatgpt,high,high,high,low,Clarity: high; Faithfulness: high; Behavior inference: high; Hallucination risk: low.

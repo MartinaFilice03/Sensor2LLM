@@ -1,0 +1,2 @@
+best_representation,reason,limitation,next_step
+minute_level,Minute-level aggregation provides a compact representation while preserving useful temporal information.,The evaluation is qualitative and based on a limited sample.,Evaluate more days and compare outputs from multiple LLMs.
