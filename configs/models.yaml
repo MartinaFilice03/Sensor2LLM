@@ -1,0 +1,5 @@
+models:
+  - name: sensor2llm_manual
+    provider: manual
+    description: "Manual LLM-style evaluation based on generated prompts and qualitative representation analysis"
+    active: true
