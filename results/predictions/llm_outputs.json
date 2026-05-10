@@ -1,0 +1,26 @@
+[
+  {
+    "run_id": "run_001",
+    "prompt_type": "summary",
+    "representation": "event_level",
+    "output": "The resident mainly moved between the bedroom, living room, bathroom, and kitchen during the observed period."
+  },
+  {
+    "run_id": "run_002",
+    "prompt_type": "analysis",
+    "representation": "event_level",
+    "output": "The resident mainly moved between the bedroom, living room, bathroom, and kitchen during the observed period."
+  },
+  {
+    "run_id": "run_003",
+    "prompt_type": "aggregated",
+    "representation": "minute_level",
+    "output": "The resident mainly moved between the bedroom, living room, bathroom, and kitchen during the observed period."
+  },
+  {
+    "run_id": "run_004",
+    "prompt_type": "hourly",
+    "representation": "hourly_level",
+    "output": "The resident mainly moved between the bedroom, living room, bathroom, and kitchen during the observed period."
+  }
+]
