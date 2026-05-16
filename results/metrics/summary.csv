@@ -1,2 +1,4 @@
-best_representation,reason,limitation,next_step
-minute_level,"Minute-level aggregation provides the best balance between readability, compactness, and preservation of temporal information.",The current evaluation is qualitative and based on prompt/input representation analysis.,Run LLM inference with multiple models and compare generated answers against annotated summaries and QA pairs.
+representation,avg_score
+event_level,2.0
+minute_level,2.0
+hourly_level,2.0

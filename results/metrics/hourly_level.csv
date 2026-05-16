@@ -1,0 +1,2 @@
+run_id,date,representation,prompt_type,clarity,faithfulness,behavior_inference,hallucination_risk,sentence_length,active_rooms,temporal_coverage,movement_density
+run_004,2009-10-16,hourly_level,hourly,high,high,high,low,16.41,8,medium,high

@@ -1,0 +1,16 @@
+experiments:
+  - name: event_summary
+    representation: event_level
+    prompt_type: summary
+
+  - name: event_analysis
+    representation: event_level
+    prompt_type: analysis
+
+  - name: minute_aggregated
+    representation: minute_level
+    prompt_type: aggregated
+
+  - name: hourly_behavior
+    representation: hourly_level
+    prompt_type: hourly
