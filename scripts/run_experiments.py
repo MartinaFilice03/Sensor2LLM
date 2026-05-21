@@ -1,38 +1,36 @@
 import subprocess
-from pathlib import Path
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 PIPELINE_STEPS = [
-    ("Build dataset", "build_dataset.py"),
-    ("Create annotated windows", "create_annotated_windows.py"),
-    ("Generate prompts", "generate_prompts.py"),
-    ("Run mock LLM", "run_llm.py"),
-    ("Evaluate results", "evaluate_results.py"),
+    ("Build dataset", "scripts.build_dataset"),
+    ("Create annotated windows", "scripts.create_annotated_windows"),
+    ("Generate prompts", "scripts.generate_prompts"),
+    ("Run mock LLM", "src.llm.runner"),
+    ("Evaluate results", "scripts.evaluate_results"),
 ]
 
 
-def run_script(script_name: str) -> None:
-    script_path = PROJECT_ROOT / "scripts" / script_name
+def run_script(module_name: str, label: str) -> None:
+    print(f"\nRunning: {label}")
 
     result = subprocess.run(
-        ["python3", str(script_path)],
-        cwd=PROJECT_ROOT
+        ["python3", "-m", module_name],
+        check=False,
     )
 
     if result.returncode != 0:
-        raise RuntimeError(f"{script_name} failed.")
+        raise RuntimeError(f"{module_name} failed.")
+
+    print(f"Completed: {label}")
 
 
 def main() -> None:
-    print("\n=== Sensor2LLM Experiment Pipeline ===\n")
+    print("\n=== Sensor2LLM Experiment Pipeline ===")
 
-    for description, script_name in PIPELINE_STEPS:
-        print(f"Running: {description}")
-        run_script(script_name)
-        print(f"Completed: {description}\n")
+    for label, module_name in PIPELINE_STEPS:
+        run_script(module_name, label)
 
-    print("All experiments completed successfully.")
+    print("\nAll experiments completed successfully.")
 
 
 if __name__ == "__main__":
