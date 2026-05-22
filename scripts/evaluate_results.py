@@ -6,7 +6,7 @@ from src.eval.metrics import score_output
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
-prompts_path = PROJECT_ROOT / "outputs" / "generated_prompts.json"
+prompts_path = PROJECT_ROOT / "results" / "predictions" / "llm_outputs.json"
 metrics_dir = PROJECT_ROOT / "results" / "metrics"
 summary_path = metrics_dir / "summary.csv"
 
@@ -54,7 +54,7 @@ def main() -> None:
             continue
 
         # IMPORTANT: assumes score_output returns dict of metrics
-        scores = score_output(item)
+        scores = score_output(item["output"])
 
         row = {
             "run_id": item.get("run_id"),
