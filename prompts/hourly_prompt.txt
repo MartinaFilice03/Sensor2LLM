@@ -1,10 +1,35 @@
 You are given hourly aggregated smart home sensor events translated into natural language.
 
+Each event entry corresponds to one hour of activity and describes the main sensor-detected behaviors during that hour.
+
 Events:
 {events}
 
-Tasks:
-1. Describe the resident's behavior over the observed period.
-2. Identify the main areas used during different hours.
-3. Highlight any unusual or notable pattern.
-4. Provide a short overall interpretation.
+Your tasks:
+
+1. Describe the resident's behavior over the observed period, focusing on how activity changes across the day.
+
+2. Identify the main areas of the home used during different times of the day (morning, afternoon, evening, night).
+
+3. Detect and describe any unusual or notable patterns, such as irregular activity, unexpected room usage, or atypical timing.
+
+4. Provide a concise final interpretation summarizing the resident’s overall daily routine and lifestyle inferred from the data.
+
+Output format:
+
+1. Behavior summary:
+Write a clear description of the resident’s activity across the full time period, emphasizing changes over time.
+
+2. Room and area usage by time of day:
+Morning:
+Afternoon:
+Evening:
+Night:
+
+For each time period, specify which rooms or areas were most used and what type of activity occurred.
+
+3. Unusual or notable patterns:
+Describe any deviations from a normal daily routine, unusual timings, or unexpected behaviors observed in the data.
+
+4. Final interpretation:
+Summarize the overall lifestyle pattern of the resident in a short paragraph, based strictly on the observed events.

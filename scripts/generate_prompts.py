@@ -21,13 +21,21 @@ def main() -> None:
         raise FileNotFoundError(f"Input file not found: {input_path}")
 
     data = read_json(input_path)
-    sample = data[0]
 
-    generated_prompts = generate_prompts(
-        sample=sample,
-        prompts_dir=prompts_dir,
-        max_chars=MAX_CHARS,
-    )
+    if not data:
+        raise ValueError("Dataset is empty")
+
+    generated_prompts = []
+
+    # PROCESS ALL SAMPLES
+    for sample in data:
+        sample_prompts = generate_prompts(
+            sample=sample,
+            prompts_dir=prompts_dir,
+            max_chars=MAX_CHARS,
+        )
+
+        generated_prompts.extend(sample_prompts)
 
     save_generated_prompts(generated_prompts, output_path)
 

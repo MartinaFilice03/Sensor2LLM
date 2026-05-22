@@ -2,15 +2,19 @@ experiments:
   - name: event_summary
     representation: event_level
     prompt_type: summary
+    enabled: true
 
   - name: event_analysis
     representation: event_level
     prompt_type: analysis
+    enabled: true
 
   - name: minute_aggregated
     representation: minute_level
     prompt_type: aggregated
+    enabled: true
 
   - name: hourly_behavior
     representation: hourly_level
     prompt_type: hourly
+    enabled: true

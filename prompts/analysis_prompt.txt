@@ -1,11 +1,25 @@
-You are given a sequence of smart home sensor events from a smart home environment.
+You are given a chronological sequence of smart home sensor events translated into natural language.
+
+The events represent fine-grained activity observations inside a smart home.
 
 Events:
 {events}
 
-Answer the following questions:
+Analyze the event sequence and answer the following tasks:
 
-1. What activities or movements can be inferred from these events?
-2. Which rooms appear to be used the most?
-3. Are there any unusual transitions, patterns, or behaviors?
+1. Describe the movement or interaction patterns observed over time.
+   Focus on transitions, repeated sensor activations, and temporal ordering.
+
+2. Identify the rooms or areas with the highest activity.
+   Mention where activity appears concentrated.
+
+3. Detect any unusual transitions, inactivity periods, repetitive behavior, or anomalies.
+   Highlight notable event-level patterns.
+
 4. Provide a concise overall interpretation of the resident's behavior.
+   Summarize the likely behavior in 2–3 sentences.
+
+Important:
+- Use only the information present in the event sequence.
+- Do not infer unsupported activities (e.g. sleeping, cooking, eating) unless clearly indicated by sensor evidence.
+- Keep reasoning concise, temporal, and grounded in the observed events.

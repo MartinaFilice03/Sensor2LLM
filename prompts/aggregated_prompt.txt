@@ -1,10 +1,25 @@
 You are given aggregated smart home sensor events translated into natural language.
 
+The events describe resident movement, room activity, and temporal behavior patterns inside a smart home.
+
 Events:
 {events}
 
-Tasks:
+Analyze the sensor activity and complete the following tasks:
+
 1. Describe the resident's behavior over time.
-2. Identify the most used rooms or areas.
-3. Highlight any unusual or notable pattern.
+   Focus on movement trends, repeated activities, and temporal flow.
+
+2. Identify the most frequently used rooms or areas.
+   Mention where the resident appears most active.
+
+3. Highlight any unusual, repetitive, or notable pattern.
+   Include inactivity, repeated transitions, or unexpected behavior.
+
 4. Provide a short overall interpretation.
+   Summarize the likely behavioral pattern in 2–3 sentences.
+
+Important:
+- Use only the information provided in the events.
+- Do not invent activities or assumptions not supported by the data.
+- Keep the reasoning concise and grounded in the sensor observations.

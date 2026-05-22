@@ -3,5 +3,12 @@ You are given smart home sensor events translated into natural language.
 Events:
 {events}
 
-Summarize the resident's behavior in 5-6 sentences.
-Mention the most active rooms and any notable pattern.
+Write a concise summary of the resident’s behavior in 5–6 sentences.
+
+Your summary must:
+- Describe the overall daily routine and activity pattern
+- Mention the most frequently used rooms or areas
+- Highlight any notable or unusual behavior patterns
+- Be strictly based on the provided events (do not assume missing information)
+
+Focus on clarity and avoid repetition.

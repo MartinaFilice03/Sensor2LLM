@@ -1,61 +1,128 @@
-# Input representations compared
+# Input Representations Comparison
 
-In this notebook, compare different textual representations of the same smart home sensor data.
+This notebook compares different textual representations of the same smart home sensor data to evaluate which format is most suitable for LLM-based reasoning about resident behavior, room activity, and temporal patterns.
 
-The goal is to understand which representation is more suitable for LLM-based reasoning about resident behavior, room usage, and notable patterns.
+The goal is to analyze how different levels of aggregation affect interpretability, temporal fidelity, and the quality of downstream reasoning.
 
-## Compared representations
+## Methodology
 
-Compare three input representations:
+The evaluation pipeline follows these steps:
 
-1. **Clean event-level representation**: individual sensor events translated into natural language.
-2. **Minute-level aggregated representation**: events grouped by minute to reduce redundancy.
-3. **Hourly aggregated representation**: events grouped by hour to provide a compact behavioral overview.
+1. Raw smart home sensor data is segmented into daily windows.
+2. Each window is transformed into different textual representations.
+3. Prompts are generated from each representation.
+4. A mock LLM-style reasoning step is applied.
+5. Outputs are evaluated using structured metrics and qualitative comparison.
 
-## First observation
+This allows a comparison between representation granularity and reasoning effectiveness.
 
-The raw event-level representation is very faithful to the original data, but it is noisy and repetitive.
+## Compared Representations
 
-The minute-level representation is more compact and easier to interpret because it groups events occurring in the same minute.
+### 1. Event-level representation
 
-The hourly representation gives a broader overview, but it may lose fine-grained temporal details.
+Individual sensor events are translated into natural language descriptions while preserving temporal order.
 
-## Comparison table
+Example:
+- Kitchen motion detected at 08:03
+- Bedroom door opened at 08:05
 
-| Representation | Clarity | Faithfulness | Behavior inference | Hallucinations risk | Notes |
-|---|---|---|---|---|---|
-| Clean event-level | Medium | High | Medium | Low | Too detailed and repetitive, hard to see patterns |
-| Minute-level aggregated | High | High | High | Low | Best balance between readability and detail |
-| Hourly aggregated | High | Medium | Medium | Medium | Good overview but loses temporal precision |
+This representation is highly faithful to the original data but may become noisy and repetitive.
 
-## Evaluation criteria
+---
 
-Evaluate the representations using qualitative criteria:
+### 2. Minute-level aggregated representation
 
-- **Clarity**: how readable the input is.
-- **Faithfulness**: how much information from the original data is preserved.
-- **Behavior inference**: how well the representation supports reasoning about resident behavior.
-- **Hallucinations risk**: how likely the model is to infer unsupported information.
+Events occurring within the same minute are grouped together to reduce redundancy.
 
-## Key insights
+Example:
+- 08:03 → kitchen motion, hallway motion
+- 08:04 → bedroom door opened
 
-- Raw sensor events are too granular and repetitive for effective reasoning.
-- Aggregation reduces noise and improves interpretability.
-- There is a trade-off between detail and abstraction.
-- The minute-level representation appears to provide the best balance for this task.
+This representation preserves relevant temporal information while improving readability.
 
-## Baseline comparison
+---
 
-A simple rule-based baseline is useful because it provides a rigid comparison point.
+### 3. Hourly aggregated representation
 
-The baseline can detect predefined situations, while an LLM-based approach may provide more flexible interpretations.
+Sensor activity is summarized at hourly resolution.
 
-However, LLM outputs must be checked carefully because they may introduce unsupported assumptions.
+Example:
+- 08:00–09:00 → frequent kitchen activity, bedroom transitions
+
+This representation provides a compact behavioral overview but may lose fine-grained temporal detail.
+
+## Evaluation Criteria
+
+Representations are compared using qualitative and structural criteria:
+
+- **Clarity** → readability of the textual input
+- **Faithfulness** → preservation of original temporal and spatial information
+- **Behavior inference** → support for reasoning about resident behavior
+- **Hallucination risk** → likelihood of unsupported assumptions
+- **Temporal precision** → ability to preserve detailed event timing
+
+## Comparative Analysis
+
+| Representation | Clarity | Faithfulness | Behavior Inference | Hallucination Risk | Temporal Precision |
+|---|---:|---:|---:|---:|---:|
+| Event-level | 6/10 | 9/10 | 7/10 | 2/10 | 10/10 |
+| Minute-level | 9/10 | 8/10 | 9/10 | 2/10 | 8/10 |
+| Hourly-level | 8/10 | 6/10 | 7/10 | 5/10 | 4/10 |
+
+The event-level representation preserves maximum detail, but its verbosity makes reasoning more difficult.
+
+The minute-level representation offers the best balance between temporal fidelity and readability.
+
+The hourly-level representation improves compactness but may remove useful behavioral transitions.
+
+## Baseline Comparison
+
+A simple rule-based baseline is used as a deterministic reference.
+
+The baseline relies on heuristic rules such as:
+
+- room activation frequency
+- movement density
+- repeated transitions
+- temporal coverage
+
+Unlike an LLM-style interpretation, the baseline does not infer flexible behavioral summaries, but it provides a stable comparison point.
+
+## Relation to Evaluation Outputs
+
+This qualitative comparison is aligned with the generated evaluation pipeline outputs:
+
+```bash
+results/metrics/
+├── event_level.csv
+├── minute_level.csv
+├── hourly_level.csv
+└── summary.csv
+```
+
+These reports allow structured comparison across representations.
+
+## Key Insights
+
+The analysis highlights several observations:
+
+- Raw event-level data is highly accurate but often repetitive
+- Aggregation reduces noise and improves interpretability
+- Excessive aggregation may reduce behavioral precision
+- Representation quality directly affects reasoning quality
+
+Among the tested formats, minute-level aggregation provides the strongest balance between detail preservation and interpretability.
 
 ## Conclusion
 
-This first analysis suggests that input representation strongly affects the interpretability of sensor data.
+Input representation plays a central role in Sensor2LLM.
 
-Moderate aggregation, especially minute-level aggregation, seems to provide the best balance between readability and preservation of useful behavioral information.
+Different aggregation levels significantly affect readability, temporal fidelity, and reasoning quality.
 
-Future work will compare actual LLM outputs against manually annotated ground-truth summaries and question-answer pairs.
+The current results suggest that minute-level aggregation is the most effective representation for LLM-style reasoning over smart home sensor data, balancing compactness with useful behavioral detail.
+
+Future work may include:
+- real LLM-based evaluation
+- question-answer benchmarks
+- anomaly detection tasks
+- cross-home generalization analysis

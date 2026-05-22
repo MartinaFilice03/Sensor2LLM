@@ -1,12 +1,28 @@
 prompt_event_sample = f"""
-You are given a sequence of smart home sensor events translated into natural language.
+You are given a chronological sequence of smart home sensor events translated into natural language.
+
+The events represent fine-grained observations of movement and room activity inside a smart home.
 
 Sensor events:
 {text_event_sample}
 
-Tasks:
-1. Describe the user's behavior.
-2. Identify the most used rooms.
-3. Highlight any unusual pattern.
+Analyze the event-level sequence and complete the following tasks:
+
+1. Describe the resident's movement or interaction patterns over time.
+   Focus on temporal ordering, repeated activations, and transitions.
+
+2. Identify the most frequently used rooms or areas.
+   Mention where activity appears concentrated.
+
+3. Highlight any unusual, repetitive, or notable event-level pattern.
+   Include inactivity periods, repeated transitions, or anomalies.
+
+4. Provide a concise overall interpretation.
+   Summarize the likely behavioral pattern in 2–3 sentences.
+
+Important:
+- Use only the information contained in the sensor events.
+- Do not infer unsupported activities (e.g. sleeping, cooking, eating) unless clearly supported by the event sequence.
+- Keep reasoning concise, temporal, and grounded in observed sensor activity.
 """
 print(prompt_event_sample[:3000])
